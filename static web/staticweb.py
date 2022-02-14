@@ -97,34 +97,3 @@ for pregunta in lista_de_preguntas:
 
 #%%
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
