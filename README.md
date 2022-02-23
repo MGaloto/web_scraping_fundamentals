@@ -24,6 +24,7 @@ Las herramientas de web scraping son software, es decir, bots programados para e
 <li>
 Reconocer estructuras de sitios HTML únicos.
 </li>
+<li>
 Extraer y transformar contenidos.
 </li>
 <li>
@@ -44,6 +45,7 @@ El siguiente trabajo consiste en utilizar las siguientes librerias para probar e
 <li>
 Selenium
 </li>
+<li>
 Beautifoulsoup
 </li>
 <li>
