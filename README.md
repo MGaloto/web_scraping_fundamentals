@@ -6,11 +6,9 @@
 <br>
 </br>
 
-<p align="center">
-
+<div align="center">
 # Web Scraping
-
-</p>
+</div>
 
 
 <p align="center">
