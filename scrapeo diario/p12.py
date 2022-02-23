@@ -1,7 +1,7 @@
 from funciones import Funciones
 import requests
 from bs4 import BeautifulSoup as BS
-
+import pprint
 
 url = 'https://www.pagina12.com.ar'
 
@@ -39,3 +39,4 @@ print('\n')
 lista_final = Funciones.ScrapContent(links)
 Funciones.SaveJson(lista_final)
 
+pprint.pprint(lista_final)

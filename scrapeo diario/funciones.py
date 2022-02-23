@@ -22,10 +22,12 @@ class Funciones:
 
     def ScrapContent(links):
         notapagina = []
+        count = 0
         for urls in links:
             try:
                 nota = requests.get(urls)
                 if nota.status_code == 200:
+                    count += 1
                     note = BS(nota.text, 'lxml')
                     titulos = note.find('div', attrs= {'class': 'col 2-col'})
                     try:
@@ -40,12 +42,19 @@ class Funciones:
                         texto  = titulos.find('h3').text
                     except:
                         texto = None
+                    try:
+                        autor  = titulos.find('div', attrs= {'class':'author-name'}).text
+                    except:
+                        autor = None
 
                     elementos = {
+                        
                         'Titulo': titulo,
                         'Encabezado' : encabezado,
                         'Texto': texto,
-                        'url': urls
+                        'url': urls,
+                        'Numero' : count,
+                        'Autor':autor
                     }
 
                     notapagina.append(elementos)
