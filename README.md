@@ -6,13 +6,13 @@
 <br>
 </br>
 
-<div align="center">
-# Web Scraping
-</div>
 
+# Web Scraping
+
+<h1 style="text-align:center">Web Scraping</h1>
 
 <p align="center">
-<img src="https://web24.media/wp-content/uploads/2020/12/web-scraping-process1.png" alt="react" width="300" height="150" />
+<img src="https://www.antevenio.com/wp-content/uploads/2019/03/web-scraping-attack.jpg" alt="react" width="300" height="200" />
 </p>
 
 
