@@ -12,7 +12,7 @@
 
 
 <p align="center">
-<img src="https://learningactors.com/wp-content/uploads/2021/01/cheerio-a-simple-tool.png" alt="react" width="500" height="400" />
+<img src="https://learningactors.com/wp-content/uploads/2021/01/cheerio-a-simple-tool.png" alt="react" width="600" height="400" />
 </p>
 
 
