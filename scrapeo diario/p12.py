@@ -11,9 +11,9 @@ Funciones.Inicio(url)
 
 # Vista del encabezado:
 
-lista_encabezado = Funciones.ScrapHeader(requests.get(url))
+lista_encabezado = Funciones.ScrapLinks(requests.get(url))
 
-# Recorrido del encabezado:
+# Extraccion de links
 
 links = []
 
@@ -33,8 +33,9 @@ for lista in lista_encabezado:
             print('\n')
 
 print(f'La lista contiene {len(links)} links')
+print('\n')
 
 
-for link in links:
-    print(Funciones.ScrapContent(link))
+lista_final = Funciones.ScrapContent(links)
+Funciones.SaveJson(lista_final)
 
