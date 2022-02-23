@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup as BS
+import json
 
 class Funciones:
 
@@ -21,17 +22,45 @@ class Funciones:
         return secciones
 
     def ScrapContent(urls):
+        notapagina = []
         try:
             nota = requests.get(urls)
             if nota.status_code == 200:
                 note = BS(nota.text, 'lxml')
                 titulos = note.find('div', attrs= {'class': 'col 2-col'})
-                titulouno = titulos.h1.get_text()
-                titulodos = titulos.h4.get_text()
-                texto  = titulos.h3
-                print(titulouno,'\n' ,titulodos,'\n', texto)
+                try:
+                    titulo = titulos.h1.get_text()
+                except:
+                    titulo = None
+                try:
+                    encabezado = titulos.h4.get_text()
+                except:
+                    encabezado = None
+                try:
+                    texto  = titulos.find('h3').text
+                except:
+                    texto = None
+
+                elementos = {
+                    'Titulo': titulo,
+                    'Encabezado' : encabezado,
+                    'Texto': texto,
+                    'url': urls
+                }
+
+                notapagina.append(elementos)
+
+                #print(' Titulo: ',titulo,'\n' ,'Encabezado: ',encabezado,'\n', 'Texto: ',texto)
+                #print('\n')
         except Exception as e:
                 print('Error: ',e)
+        return notapagina
+
+
+    def SaveJson(nombre_archivo):
+        with open('notas.json', 'w', encoding='utf-8') as archivo_json_notas:
+        json.dump(nombre_archivo, archivo_json_notas, ensure_ascii=False, indent = 2)
+
 
 
 
