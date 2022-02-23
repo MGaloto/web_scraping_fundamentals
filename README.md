@@ -3,8 +3,15 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="react" width="50" height="50" />
 </p>
 
+<br>
+</br>
+
+<p align="center">
 
 # Web Scraping
+
+</p>
+
 
 <p align="center">
 <img src="https://web24.media/wp-content/uploads/2020/12/web-scraping-process1.png" alt="react" width="300" height="150" />
@@ -30,6 +37,8 @@ Extraer datos de las API.
 
 </ui>
 
+<br>
+</br>
 
 El siguiente trabajo consiste en utilizar las siguientes librerias para probar el potencial que tienen cada una a la hora de hacer Web Scraping:
 
