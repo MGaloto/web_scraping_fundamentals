@@ -9,7 +9,7 @@
 
 # Web Scraping
 
-<h1 style="text-align:center">Web Scraping</h1>
+
 
 <p align="center">
 <img src="https://www.antevenio.com/wp-content/uploads/2019/03/web-scraping-attack.jpg" alt="react" width="300" height="200" />
