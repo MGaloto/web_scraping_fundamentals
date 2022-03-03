@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup as BS
 import json
 from selenium import webdriver
 from prefect import task, Flow
+from prefect.schedules import IntervalSchedule
+from datetime import timedelta
 from time import sleep
 import pprint
 
@@ -33,12 +35,12 @@ def load(links):
     print('\n',links.text,'\n')
 
 
-
+schedule = IntervalSchedule(interval=timedelta(minutes=0.5))
 '''
 Este flow ejecuta la primer funcion load.
 '''
 
-with Flow('ETL') as flow:
+with Flow('ETL', schedule) as flow:
     '''
     Guardamos el resultado de extract para pasarselo a load
     '''
@@ -54,5 +56,6 @@ Con el siguiente comando ejecutamos el script flow
 '''
 
 flow.run()
+
 
 
