@@ -12,7 +12,7 @@
 
 
 <p align="center">
-<img src="https://www.grazitti.com/wp-content/uploads/2019/08/ETL_Bannera.gif" alt="react" width="600" height="400" />
+<img src="https://www.grazitti.com/wp-content/uploads/2019/08/ETL_Bannera.gif" alt="react" width="800" height="380" />
 </p>
 
 
